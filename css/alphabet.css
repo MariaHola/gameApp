@@ -1,0 +1,36 @@
+#alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+  }
+  #alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    padding-top: 10px;
+    background: #f1f2f6;
+    color: #2c2c54;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: solid 1px #2c2c54;
+  }
+  #alphabet li:hover {
+    background: #34ace0;
+    border: solid 1px #34ace0;
+    color: #2c2c54;
+  }
+  #alphabet li:active {
+    background: #86d5f7;
+    border: solid 1px #86d5f7;
+    color: #2c2c54;
+  }
