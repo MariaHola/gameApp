@@ -1,10 +1,13 @@
 window.onload = function() {
     var alphabet = [
       "a",
+      "ą",
       "b",
       "c",
+      "ć",
       "d",
       "e",
+      "ę",
       "f",
       "g",
       "h",
@@ -12,20 +15,25 @@ window.onload = function() {
       "j",
       "k",
       "l",
+      "ł",
       "m",
       "n",
       "o",
+      "ó",
       "p",
       "q",
       "r",
       "s",
+      "ś",
       "t",
       "u",
       "v",
       "w",
       "x",
       "y",
-      "z"
+      "z",
+      "ź",
+      "ż"
     ];
   
     var categories; // Array of topics
