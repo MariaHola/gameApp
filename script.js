@@ -66,15 +66,14 @@ window.onload = function() {
       }
     };
   
-    // Select Catagory
     var selectCat = function() {
       if (chosenCategory === categories[0]) {
         catagoryName.innerHTML =
-          "The Chosen Category Is Premier League Football Teams";
+          "Kategoria: Miasta";
       } else if (chosenCategory === categories[1]) {
-        catagoryName.innerHTML = "The Chosen Category Is Films";
+        catagoryName.innerHTML = "Kategoria: Polskie potrawy";
       } else if (chosenCategory === categories[2]) {
-        catagoryName.innerHTML = "The Chosen Category Is Cities";
+        catagoryName.innerHTML = "Kategoria: Rośliny";
       }
     };
   
@@ -215,20 +214,24 @@ window.onload = function() {
       };
     };
   
-    // Play
+  
     play = function() {
       categories = [
         [
-          "everton",
-          "liverpool",
-          "swansea",
-          "chelsea",
-          "hull",
-          "manchester-city",
-          "newcastle-united"
+          "zabrze",
+          "gdańsk",
+          "warszawa",
+          "poznań",
+          "opole",
+          "łódź",
+          "kraków",
+          "gdynia",
+          "szczecin",
+          "katowice",
+          "wejcherowo"
         ],
-        ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
-        ["manchester", "milan", "madrid", "amsterdam", "prague"]
+        ["krupnik", "kluski-śląskie", "szczawiowa", "kaszanka", "chłodnik"],
+        ["tulipan", "bez", "mlecz", "róża", "bluszcz"]
       ];
   
       chosenCategory = categories[Math.floor(Math.random() * categories.length)];
