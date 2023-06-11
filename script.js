@@ -101,13 +101,13 @@ window.onload = function() {
   
     // Show lives
     comments = function() {
-      showLives.innerHTML = "You have " + lives + " lives";
+      showLives.innerHTML = "Pozostało Ci " + lives + " prób";
       if (lives < 1) {
-        showLives.innerHTML = "Game Over";
+        showLives.innerHTML = "Ale z Ciebie Bambik...";
       }
       for (var i = 0; i < geusses.length; i++) {
         if (counter + space === geusses.length) {
-          showLives.innerHTML = "You Win!";
+          showLives.innerHTML = "Wygrana!";
         }
       }
     };
