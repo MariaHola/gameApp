@@ -101,7 +101,7 @@ window.onload = function() {
   
     // Show lives
     comments = function() {
-      showLives.innerHTML = "Pozostało Ci " + lives + " prób";
+      showLives.innerHTML = "Pozostało Ci " + lives + " prób.";
       if (lives < 1) {
         showLives.innerHTML = "Ale z Ciebie Bambik...";
       }
