@@ -3,21 +3,20 @@ window.onload = function() {
       "a","ą","b","c","ć","d","e","ę","f","g","h","i","j","k","l","ł","m","n","o","ó","p","q","r","s","ś","t","u","v","w","x","y","z","ź","ż"
     ];
   
-    var categories; // Array of topics
-    var chosenCategory; // Selected catagory
-    var word; // Selected word
-    var guess; // Geuss
-    var geusses = []; // Stored geusses
-    var lives; // Lives
-    var counter; // Count correct geusses
-    var space; // Number of spaces in word '-'
+    var categories; 
+    var chosenCategory; 
+    var word; 
+    var guess; 
+    var geusses = []; 
+    var lives; 
+    var counter; 
+    var space; 
   
-    // Get elements
+    
     var showLives = document.getElementById("mylives");
-    console.log(showLives); //show element
+    console.log(showLives); 
     var showCatagory = document.getElementById("scatagory");
   
-    // create alphabet ul
     var buttons = function() {
       myButtons = document.getElementById("buttons");
       letters = document.createElement("ul");
@@ -44,7 +43,7 @@ window.onload = function() {
       }
     };
   
-    // Create geusses ul TODO
+    
     result = function() {
       wordHolder = document.getElementById("hold");
       correct = document.createElement("ul");
@@ -79,13 +78,13 @@ window.onload = function() {
       }
     };
   
-    // Animate man
+    
     var animate = function() {
       var drawMe = lives;
       drawArray[drawMe]();
     };
   
-    // Hangman
+   
     canvas = function() {
       myStickman = document.getElementById("stickman");
       context = myStickman.getContext("2d");
@@ -157,7 +156,7 @@ window.onload = function() {
       frame1
     ];
   
-    // OnClick Function TODO
+
     check = function() {
       list.onclick = function() {
         var geuss = this.innerHTML;
@@ -219,7 +218,6 @@ window.onload = function() {
   
     play();
   
-    // Reset
   
     document.getElementById("reset").onclick = function() {
       correct.parentNode.removeChild(correct);
